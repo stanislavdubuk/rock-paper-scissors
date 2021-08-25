@@ -1,0 +1,25 @@
+.game {
+  margin: 0 auto;
+  width: 40rem;
+  padding: 3rem 7rem;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    width: 26rem;
+    margin-bottom: 2rem;
+  }
+
+  .bottom {
+    margin: 0 auto;
+    width: 10rem;
+  }
+
+  .result {
+    display: flex;
+    margin-top: 4rem;
+    margin-left: -7rem;
+    width: 40rem;
+    justify-content: space-between;
+  }
+}

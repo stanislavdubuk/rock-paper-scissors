@@ -16,28 +16,23 @@ interface Props {
 }
 
 const Circle: FC<Props> = ({ type, disabled }) => {
+  const dispatch = useAppDispatch();
+
   let borderColor;
+  let icon;
+
   if (type === 'rock') {
     borderColor = 'rgb(212, 68, 50)';
+    icon = iconRock;
   } else if (type === 'scissors') {
     borderColor = 'rgb(255, 174, 81)';
+    icon = iconScissors;
   } else {
     borderColor = 'rgb(98, 144, 230)';
+    icon = iconPaper;
   }
+
   const border = { border: `1rem solid ${borderColor}` };
-
-  let iconTest;
-  if (type === 'rock') {
-    iconTest = iconRock;
-  }
-  if (type === 'paper') {
-    iconTest = iconPaper;
-  }
-  if (type === 'scissors') {
-    iconTest = iconScissors;
-  }
-
-  const dispatch = useAppDispatch();
 
   const handleChoice = () => {
     dispatch(userChoose(`${type}`));
@@ -57,7 +52,7 @@ const Circle: FC<Props> = ({ type, disabled }) => {
         }
       }}
     >
-      <img src={iconTest} alt='icon' />
+      <img src={icon} alt='icon' />
     </div>
   );
 };

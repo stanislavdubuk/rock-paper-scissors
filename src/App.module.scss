@@ -3,4 +3,20 @@
   min-width: 100vw;
   background: var(--background);
   padding: 2rem;
+  overflow: hidden;
+
+  .button {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: transparent;
+    border: 2px solid var(--header-outline);
+    font-size: 10px;
+    font-family: var(--font-family);
+    letter-spacing: 2px;
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+  }
 }

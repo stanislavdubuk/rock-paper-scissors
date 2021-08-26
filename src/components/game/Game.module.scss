@@ -1,25 +1,66 @@
 .game {
   margin: 0 auto;
-  width: 40rem;
-  padding: 3rem 7rem;
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .top {
     display: flex;
     justify-content: space-between;
-    width: 26rem;
+    width: 28rem;
     margin-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 28rem;
   }
 
   .bottom {
-    margin: 0 auto;
-    width: 10rem;
+    margin-top: -16rem;
   }
 
   .result {
     display: flex;
-    margin-top: 4rem;
-    margin-left: -7rem;
-    width: 40rem;
+    margin: 0 auto;
+    width: 50rem;
     justify-content: space-between;
+
+    .player {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      span {
+        color: #fff;
+        letter-spacing: 3px;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .again {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 6rem;
+
+      span {
+        color: #fff;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      button {
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 10px;
+        font-family: var(--font-family);
+        background-color: #fff;
+        letter-spacing: 2px;
+        padding: 0.5rem 2rem;
+        color: rgb(207, 69, 69);
+      }
+    }
   }
 }

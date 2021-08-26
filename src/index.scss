@@ -1,4 +1,7 @@
 :root {
+  // FONT
+  --font-family: 'Barlow Semi Condensed', sans-serif;
+
   // COLORS
 
   // Primary
@@ -29,5 +32,5 @@
 }
 
 body {
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: var(--font-family);
 }

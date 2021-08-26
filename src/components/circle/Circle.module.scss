@@ -1,12 +1,16 @@
 .circle {
-  width: 10rem;
-  height: 10rem;
+  width: 12rem;
+  height: 12rem;
   background-color: #fff;
   border-radius: 50%;
-  padding: 2.3rem;
-  border: 1rem solid cornflowerblue;
+  padding: 3.2rem;
+  border: 1rem solid rgb(98, 144, 230);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+
+  .red {
+    border: 1rem solid rgb(255, 174, 81);
+  }
 
   &:hover {
     transform: translateY(-5px);

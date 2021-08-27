@@ -38,7 +38,7 @@
     width: 50rem;
     justify-content: space-between;
 
-    @include mobile {
+    @include tablet {
       width: 100%;
     }
 

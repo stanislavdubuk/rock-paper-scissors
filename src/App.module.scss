@@ -25,7 +25,7 @@
     border-radius: 10px;
     cursor: pointer;
 
-    @include mobile {
+    @include tablet {
       left: 0;
       right: 0;
       margin: auto;

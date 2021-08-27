@@ -1,9 +1,15 @@
+@import './index.scss';
+
 .app {
   min-height: 100vh;
   min-width: 100vw;
   background: var(--background);
   padding: 2rem;
   overflow: hidden;
+
+  @include mobile {
+    padding: 2rem 1rem;
+  }
 
   .button {
     position: absolute;
@@ -16,7 +22,16 @@
     letter-spacing: 2px;
     padding: 0.5rem 1.5rem;
     color: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
+
+    @include mobile {
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 12rem;
+      padding: 1rem 2rem;
+      font-size: 20px;
+    }
   }
 }

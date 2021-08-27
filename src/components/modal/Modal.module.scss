@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .modal {
   position: absolute;
   width: 100%;
@@ -10,6 +12,11 @@
   align-items: center;
   justify-content: center;
 
+  @include mobile {
+    position: relative;
+    margin: 0;
+  }
+
   .rules {
     width: 24rem;
     height: 25rem;
@@ -19,6 +26,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include mobile {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      top: -2rem;
+      border-radius: 0;
+    }
 
     .top {
       margin-bottom: 2rem;
@@ -31,12 +46,28 @@
         font-size: 28px;
         font-weight: 700;
         color: var(--dark-text);
+
+        @include mobile {
+          margin: 0 auto;
+          margin-top: 4rem;
+          margin-bottom: 4rem;
+          font-size: 42px;
+        }
       }
 
       button {
         border: none;
         background: transparent;
         cursor: pointer;
+
+        @include mobile {
+          position: absolute;
+          bottom: 4rem;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 2rem;
+        }
       }
     }
   }

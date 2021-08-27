@@ -34,3 +34,14 @@
 body {
   font-family: var(--font-family);
 }
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}

@@ -39,7 +39,7 @@ const Circle: FC<Props> = ({ type, disabled }) => {
     setTimeout(() => {
       dispatch(computerChoose());
       dispatch(compareChoices());
-    }, 3000);
+    }, 1500);
   };
 
   return (

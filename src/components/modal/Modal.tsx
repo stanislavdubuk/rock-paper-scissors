@@ -20,10 +20,10 @@ const Modal: FC<Props> = ({ setShowModal, showModal }) => {
               setShowModal(!showModal);
             }}
           >
-            <img src={closeIcon} alt='' />
+            <img src={closeIcon} alt='closeIcon' />
           </button>
         </div>
-        <img src={rules} alt='' />
+        <img src={rules} alt='rulesPicture' />
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import { useAppSelector, useAppDispatch } from '../../store/hooks';
 import { clear } from '../../store/gameSlice';
 import { increment, setLocalScore } from '../../store/scoreSlice';
 import backgroundImg from '../../assets/images/bg-triangle.svg';
+import { CircularProgress } from '@material-ui/core';
 
 const Game: FC = () => {
   const userChoice = useAppSelector((state) => state.choice.userChoice);
@@ -59,8 +60,10 @@ const Game: FC = () => {
             )}
             <div className={s.player}>
               <span>THE HOUSE PICKED</span>
-              {computerChoice && (
+              {computerChoice !== '' ? (
                 <Circle type={computerChoice} disabled={true} />
+              ) : (
+                <CircularProgress />
               )}
             </div>
           </div>

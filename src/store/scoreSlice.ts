@@ -17,7 +17,7 @@ export const scoreSlice = createSlice({
     },
     getLocalScore: (state) => {
       if (localStorage.getItem('scores') === null) {
-        localStorage.setItem('scores', JSON.stringify([]));
+        localStorage.setItem('scores', JSON.stringify(0));
       } else {
         let scoreLocal = JSON.parse(localStorage.getItem('scores')!);
         state.score = scoreLocal;
